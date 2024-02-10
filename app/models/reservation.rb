@@ -5,4 +5,6 @@ class Reservation < ApplicationRecord
     self.end_date - self.start_date
   end
 
+  belongs_to :accomodation
+  belongs_to :user
 end
